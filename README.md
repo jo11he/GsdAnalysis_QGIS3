@@ -23,12 +23,12 @@ compatible with QGIS at the time this was written)
 - Test if QGIS and Python synergise (for example by importing modules in the QGIS
 Python Console ) if not seek help from the PyQGIS Community
 
-Part 0: Install the Plugins Line of Sight Analysis (a.) and GSD Analysis (b.)
+Part 0: Install the GSD Analysis Plugin
 1. Download the full repository as .zip file
 2. Open QGIS. Go to Plugins (Title Bar), select Manage and Install Plugins and choose
 Install from zip. Upload the .zip files from the Drive once at a time and Install Plugin.
 3. Reopen QGIS. Go to Plugins (Title Bar) and check if the installation was successful.
-You should see the Line of Sight Analysis Plugin and the GSD Plugin in that menu.
+You should see the GSD Plugin in that menu.
 
 Part A: Acquire a Digital Elevation Model (DEM)
 1. Go to https://vertex.daac.asf.alaska.edu.
@@ -65,25 +65,17 @@ will appear in the legend of your project.
 6. Select the new vector layer in the legend. Then click on the edit icon in the top
 left to make the layer editable. Then choose the icon (to the right of the edit icon)
 and add a point to the layer by a click on the map. Then untoggle the edit icon again.
-7. Navigate to the Plugins menu (Title Menu), choose your Analyser:
-a. LoS Analyzer: Provide full (unclipped) DEM and the shapefile that contains
-your take-off location, the other options should be straightforward. Note that
-the plugin can’t handle, when the area of interest (defined by GCS location
-and radius of interest) extends beyond the domain of the DEM, on which the
-calculations are based. To clip the resulting Line of Sight map, upload a
-shapefile that can be used as a mask for clipping operations.
-b. GSD Analyzer: Here it is ok (even preferable, because of less calculation) to
-upload a DEM that has been clipped to the area of interest. Provide your GCS
-location, camera specs and you are good to go! To clip the resulting GSD
-map, upload a shapefile that can be used as a mask for clipping operations.
+7. Navigate to the Plugins menu (Title Menu), choose the GSD Analysis plugin:
+It is preferable to upload a DEM that has been clipped to the area of interest. Provide your GCS
+location as a point vector layer, camera specs and you are good to go! If you prefer to clip 
+the area of interest after the GSD calculation, upload a shapefile that can be used as a mask for clipping operations.
 8. Run the analysis. After the process is complete, you will find the following files in
 your directory:
-a. ﻿/filename-0.txt: Contains the chose parameters
-﻿/filename-1.tif: Minimum flight altitude w.r.t. GCS for LoS
-﻿/filename-2.tif: Terrain elevations above GCS
-b. ﻿/filename-0.txt contains the chosen parameters
-﻿ /filename-1.tif contains the local GSD
+
+﻿/filename-0.txt contains the chosen parameters
+﻿/filename-1.tif contains the local GSD
 ﻿/filename-2.tif contains the local altitude w.r.t. ground
+ 
 As you can see the actual analysis results are contained in the -1.tif file. The -2.tif file
 provides information that directly lead to the result. The plugins output the -2.tif
 files to give the user the possibility to visualize the causes of the final result and to
@@ -94,6 +86,7 @@ under which the analysis was run.
 
 
 Part C: Visualize Results
+
 The results of the analysis are directly uploaded to your QGIS project instance. You will find
 them in the legend on the left and they should be visible in the canvas.
 The layers are added in a predefined style, that enables direct visual comparison of results.
