@@ -1,8 +1,8 @@
 # GsdAnalysis_QGIS3
-Python3 based QGIS3 plugin for Ground Sampling Distance Analysis to support UAV mapping and surveillance mission planning
+Python3 based QGIS3 plugin for Ground Sampling Distance Analysis to support UAV mapping and surveillance mission planning.
 
-For installation of the plugin simply download this repository as .zip file and then install plugin via .zip in the QGIS3 interface. 
-If you are interested in the methods used, please have a look at gsd_analysis.py, as this is where all the computations happen.
+For installation of the plugin simply download this repository as .zip file and then install plugin via .zip in the QGIS3 plugin menu. 
+If you are interested in the used methods, please have a look at gsd_analysis.py, as this is where all the computations happen.
 The rest of this readme is about the purpose of the plugin and instructions/recommondations of its use. 
 
 ---------------------------------------------------------------------------------------------------
