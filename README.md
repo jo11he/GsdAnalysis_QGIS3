@@ -72,11 +72,11 @@ the area of interest after the GSD calculation, upload a shapefile that can be u
 8. Run the analysis. After the process is complete, you will find the following files in
 your directory:
 
-﻿/filename-0.txt contains the chosen parameters
-﻿/filename-1.tif contains the local GSD
-﻿/filename-2.tif contains the local altitude w.r.t. ground
+- /filename-0.txt contains the chosen parameters
+- /filename-1.tif contains the local GSD
+- /filename-2.tif contains the local altitude w.r.t. ground
  
-As you can see the actual analysis results are contained in the -1.tif file. The -2.tif file
+This shows that the actual analysis results are contained in the -1.tif file. The -2.tif file
 provides information that directly lead to the result. The plugins output the -2.tif
 files to give the user the possibility to visualize the causes of the final result and to
 convince himself of its correctness.
