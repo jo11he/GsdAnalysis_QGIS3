@@ -88,7 +88,6 @@ As you can see the actual analysis results are contained in the -1.tif file. The
 provides information that directly lead to the result. The plugins output the -2.tif
 files to give the user the possibility to visualize the causes of the final result and to
 convince himself of its correctness.
-
 The -0.txt file is to document the user input parameters, such that the results
 contained in the corresponding .tif files can always be linked to the exact conditions
 under which the analysis was run.
