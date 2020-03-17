@@ -28,7 +28,7 @@ Python Console ) if not seek help from the PyQGIS Community
 Part 0: Install the GSD Analysis Plugin
 1. Download the full repository as .zip file
 2. Open QGIS. Go to Plugins (Title Bar), select Manage and Install Plugins and choose
-Install from zip. Upload the .zip files from the Drive once at a time and Install Plugin.
+Install from zip. Upload the .zip file and Install Plugin.
 3. Reopen QGIS. Go to Plugins (Title Bar) and check if the installation was successful.
 You should see the GSD Plugin in that menu.
 
