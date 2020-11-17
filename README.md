@@ -10,10 +10,11 @@ The rest of this readme is about the purpose of the plugin and instructions/reco
 
 
 Legend
+
 Raster Layer indicating if GSD matches the desired value: 
-Green -> match (at ~5m here)
-Yellow -> oversampled
-Red -> undersampled
+- Green -> match (at ~5m here)
+- Yellow -> oversampled
+- Red -> undersampled
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
