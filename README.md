@@ -31,21 +31,21 @@ take-off location.
 This plugin (GsdAnalysis) enables GSD computation for user-specified optical payloads at a constant flight altitude w.r.t. the take-off location.
 As a bonus the results look super awesome… Have fun!
 
-Prerequisites:
+# Prerequisites:
 - Have a working version of Python 3.6 installed on your system (Python 3.7 was not
 compatible with QGIS at the time this was written)
 - Have a working version of Quantum GIS3 (QGIS3) installed on your system
 - Test if QGIS and Python synergise (for example by importing modules in the QGIS
 Python Console ) if not seek help from the PyQGIS Community
 
-Part 0: Install the GSD Analysis Plugin
+# Part 0: Install the GSD Analysis Plugin
 1. Download the full repository as .zip file
 2. Open QGIS. Go to Plugins (Title Bar), select Manage and Install Plugins and choose
 Install from zip. Upload the .zip file and Install Plugin.
 3. Reopen QGIS. Go to Plugins (Title Bar) and check if the installation was successful.
 You should see the GSD Plugin in that menu.
 
-Part A: Acquire a Digital Elevation Model (DEM)
+# Part A: Acquire a Digital Elevation Model (DEM)
 1. Go to https://vertex.daac.asf.alaska.edu.
 2. Click on Earthdata Login on the right of the top menu bar, login in or go through the
 sign up procedure. After you have signed up and you are logged in you can continue.
@@ -60,7 +60,7 @@ The High-Res Terrain Corrected.
 something like AP-…, containing (amongst others) 3 tif files: HV, HH and DEM.
 The DEM file contains the terrain corrected elevation model.
 
-Part B: Run Analysis
+# Part B: Run Analysis
 1. Open QGIS.
 2. Set Project CRS (Coordinate Reference System). Go to Project (Title Bar) --&gt; Project
 Properties --&gt; CRS, enable ‘on the fly’ CRS transformation. Then choose your CRS. I
@@ -100,7 +100,7 @@ contained in the corresponding .tif files can always be linked to the exact cond
 under which the analysis was run.
 
 
-Part C: Visualize Results
+# Part C: Visualize Results
 
 The results of the analysis are directly uploaded to your QGIS project instance. You will find
 them in the legend on the left and they should be visible in the canvas.
