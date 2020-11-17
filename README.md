@@ -11,8 +11,8 @@ The rest of this readme is about the purpose of the plugin and instructions/reco
 
 Legend
 
-Raster Layer indicating if GSD matches the desired value: 
-- Green -> match (at ~5m here)
+Raster Layer indicating if Ground Sampling Distance (GSD) matches the user-given, desired value: 
+- Green -> match (here at ~5m)
 - Yellow -> oversampled
 - Red -> undersampled
 
@@ -26,7 +26,10 @@ to negotiated with authorities, it is helpful to be able to support your positio
 sort of analysis. This is where the QGIS plugins Line of Sight Analysis and GSD Analysis can
 be valuable tools. They enable to analyse the terrain of operation from the office which
 saves time in the field and can be used to convince authorities of the benefits of a desired
-take-off location. As a bonus it looks super awesome… Have fun!
+take-off location. 
+
+This plugin (GsdAnalysis) enables GSD computation for user-specified optical payloads at a constant flight altitude w.r.t. the take-off location.
+As a bonus the results look super awesome… Have fun!
 
 Prerequisites:
 - Have a working version of Python 3.6 installed on your system (Python 3.7 was not
