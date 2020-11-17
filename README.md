@@ -18,7 +18,7 @@ Raster Layer indicating if Ground Sampling Distance (GSD) matches the user-given
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-
+## Background & Motivation
 Flight planning over mountainous terrain is not straightforward. The choice of ground
 station/ take-off location has great impact on the success of the mission. It is not sufficient
 to simply make a decision from the gut and especially when the ground station location has
@@ -31,7 +31,7 @@ take-off location.
 This plugin (GsdAnalysis) enables GSD computation for user-specified optical payloads at a constant flight altitude w.r.t. the take-off location.
 As a bonus the results look super awesome… Have fun!
 
-## Prerequisites:
+## Prerequisites
 - Have a working version of Python 3.6 installed on your system (Python 3.7 was not
 compatible with QGIS at the time this was written)
 - Have a working version of Quantum GIS3 (QGIS3) installed on your system
