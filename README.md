@@ -9,6 +9,15 @@ The rest of this readme is about the purpose of the plugin and instructions/reco
 ![alt text](https://raw.githubusercontent.com/jo11he/GsdAnalysis_QGIS3/master/Readme_image.png)
 
 
+Legend
+Raster Layer indicating if GSD matches the desired value: 
+Green -> match (at ~5m here)
+Yellow -> oversampled
+Red -> undersampled
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
 Flight planning over mountainous terrain is not straightforward. The choice of ground
 station/ take-off location has great impact on the success of the mission. It is not sufficient
 to simply make a decision from the gut and especially when the ground station location has
